@@ -85,6 +85,7 @@ export const Footer = () => {
                 href={item.href}
                 target="_blank"
                 fontSize="sm"
+                color="white"
                 opacity={0.9}
                 _hover={{ opacity: 1 }}
               >
@@ -104,6 +105,7 @@ export const Footer = () => {
                 href={item.href}
                 target="_blank"
                 fontSize="sm"
+                color="white"
                 opacity={0.9}
                 _hover={{ opacity: 1 }}
               >

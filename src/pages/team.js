@@ -37,16 +37,44 @@ export default function TeamPage() {
               </Text>
             </Stack>
 
+            {/* Community */}
+            <Stack gap={6}>
+              <Heading as="h2" size="lg" color="gray.700">
+                Community
+              </Heading>
+              <Text color="gray.700">
+                Virtual Zarr is made possible by{" "}
+                {supporters.map((supporter, index) => (
+                  <span key={supporter.name}>
+                    <Link
+                      href={supporter.url}
+                      target="_blank"
+                      color="#e01073"
+                      _hover={{ color: "#bb1085" }}
+                    >
+                      {supporter.name}
+                    </Link>
+                    {index < supporters.length - 1 ? ", " : ", "}
+                  </span>
+                ))}
+                and the Data Systems Evolution team at{" "}
+                <Link
+                  href="https://www.nasa.gov/marshall"
+                  target="_blank"
+                  color="#e01073"
+                  _hover={{ color: "#bb1085" }}
+                >
+                  NASA Marshall Space Flight Center
+                </Link>
+                .
+              </Text>
+            </Stack>
+
             {/* VirtualiZarr Maintainers */}
             <Stack gap={6}>
               <Heading as="h2" size="lg" color="gray.700">
                 VirtualiZarr Maintainers
               </Heading>
-              <Text color="gray.600">
-                These individuals have made significant contributions to
-                VirtualiZarr, Icechunk, or earthaccess, and the integration
-                between these tools.
-              </Text>
 
               <SimpleGrid columns={{ base: 1, md: 2 }} gap={8} mt={4}>
                 {virtualizarrMaintainers.map((member) => (
@@ -156,37 +184,43 @@ export default function TeamPage() {
               </Stack>
             </Stack>
 
-            {/* Community */}
+            {/* Standing on the Shoulders of Giants */}
             <Stack gap={6}>
               <Heading as="h2" size="lg" color="gray.700">
-                Community
+                Standing on the Shoulders of Giants
               </Heading>
-              <Text color="gray.700">
-                Virtual Zarr is made possible by{" "}
-                {supporters.map((supporter, index) => (
-                  <span key={supporter.name}>
-                    <Link
-                      href={supporter.url}
-                      target="_blank"
-                      color="#e01073"
-                      _hover={{ color: "#bb1085" }}
-                    >
-                      {supporter.name}
-                    </Link>
-                    {index < supporters.length - 1 ? ", " : ", "}
-                  </span>
-                ))}
-                and the Data Systems Evolution team at{" "}
-                <Link
-                  href="https://www.nasa.gov/marshall"
-                  target="_blank"
-                  color="#e01073"
-                  _hover={{ color: "#bb1085" }}
-                >
-                  NASA Marshall Space Flight Center
-                </Link>
-                .
+              <Text color="gray.600">
+                Virtual Zarr builds on decades of foundational work in
+                scientific data formats. We are grateful to the pioneers who
+                made this possible.
               </Text>
+
+              <Stack gap={4} mt={2}>
+                <Text color="gray.600">
+                  The{" "}
+                  <Link
+                    href="https://support.hdfgroup.org/archive/support/projects/h4map/h4map_team_members.html"
+                    target="_blank"
+                    color="#e01073"
+                    _hover={{ color: "#bb1085" }}
+                  >
+                    HDF4 Mapping Project
+                  </Link>{" "}
+                  team laid essential groundwork: Ruth Aydt (Project Manager);
+                  Mike Folk, Hyo-Kyung Lee, Binh-Minh Ribler, and MuQun Yang
+                  from The HDF Group; Christopher Lynnes from GES-DISC; and Ruth
+                  E. Duerr and Luis Lopez from NSIDC.
+                </Text>
+
+                <Text color="gray.600">
+                  Aleksandar Jelenak wrote the first version of what would
+                  become Kerchunk reference files. Rich Signell connected
+                  Aleksandar with Martin Durant, who then created Kerchunk.
+                  James Gallagher created DMR++. Their collective work
+                  established the foundations that Virtual Zarr continues to
+                  build upon.
+                </Text>
+              </Stack>
             </Stack>
           </Stack>
         </Container>
