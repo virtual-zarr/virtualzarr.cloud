@@ -44,6 +44,40 @@ export const virtualizarrMaintainers = [
   },
 ];
 
+// Icechunk core developers
+export const icechunkCoreDevelopers = [
+  {
+    name: "Sebastián Galkin",
+    github: "paraseba",
+    role: "Lead Developer",
+    org: "Earthmover PBC",
+  },
+  {
+    name: "Matthew Iannucci",
+    github: "mpiannucci",
+    role: "Core Developer",
+    org: "Earthmover PBC",
+  },
+  {
+    name: "Deepak Cherian",
+    github: "dcherian",
+    role: "Core Developer",
+    org: "Earthmover PBC",
+  },
+  {
+    name: "Ryan Abernathey",
+    github: "rabernat",
+    role: "Co-founder",
+    org: "Earthmover PBC",
+  },
+  {
+    name: "Joe Hamman",
+    github: "jhamman",
+    role: "Co-founder",
+    org: "Earthmover PBC",
+  },
+];
+
 // Contributors to virtual dataset integration into earthaccess
 export const earthaccessIntegrationTeam = [
   {

@@ -12,6 +12,7 @@ import { Layout } from "@/components";
 import { TeamMember } from "@/components/team-member";
 import {
   virtualizarrMaintainers,
+  icechunkCoreDevelopers,
   earthaccessIntegrationTeam,
 } from "@/data/team-members";
 import { supporters } from "@/data/supporters";
@@ -31,9 +32,9 @@ export default function TeamPage() {
                 Team
               </Heading>
               <Text color="gray.600" maxW="2xl" mx="auto">
-                Virtual Zarr is developed through a collaboration between
-                individual open source developers, industry, government,
-                academia, and non-profits.
+                Virtual Zarr is enabled through collaboration across industry,
+                government, academia, non-profits, and individual open source
+                developers.
               </Text>
             </Stack>
 
@@ -78,6 +79,19 @@ export default function TeamPage() {
 
               <SimpleGrid columns={{ base: 1, md: 2 }} gap={8} mt={4}>
                 {virtualizarrMaintainers.map((member) => (
+                  <TeamMember key={member.github} member={member} />
+                ))}
+              </SimpleGrid>
+            </Stack>
+
+            {/* Icechunk Core Developers */}
+            <Stack gap={6}>
+              <Heading as="h2" size="lg" color="gray.700">
+                Icechunk Core Developers
+              </Heading>
+
+              <SimpleGrid columns={{ base: 1, md: 2 }} gap={8} mt={4}>
+                {icechunkCoreDevelopers.map((member) => (
                   <TeamMember key={member.github} member={member} />
                 ))}
               </SimpleGrid>
