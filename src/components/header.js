@@ -1,4 +1,4 @@
-import { menuItems } from '@/data/menu-items'
+import { menuItems } from "@/data/menu-items";
 import {
   Box,
   Container,
@@ -7,34 +7,34 @@ import {
   Link,
   Stack,
   Text,
-} from '@chakra-ui/react'
-import NextLink from 'next/link'
-import { useState } from 'react'
-import { HiMenu, HiX } from 'react-icons/hi'
+} from "@chakra-ui/react";
+import NextLink from "next/link";
+import { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const NavLink = ({ href, children }) => {
-  const isExternal = href.startsWith('http')
+  const isExternal = href.startsWith("http");
   return (
     <Link
-      as={isExternal ? 'a' : NextLink}
+      as={isExternal ? "a" : NextLink}
       href={href}
-      target={isExternal ? '_blank' : undefined}
+      target={isExternal ? "_blank" : undefined}
       p={2}
       fontSize="sm"
       fontWeight="600"
       color="gray.600"
       _hover={{
-        textDecoration: 'none',
-        color: '#e34b75',
+        textDecoration: "none",
+        color: "#e34b75",
       }}
     >
       {children}
     </Link>
-  )
-}
+  );
+};
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Box>
@@ -53,7 +53,7 @@ export const Header = () => {
         <Container maxW="container.lg">
           <Flex align="center" justify="space-between" h="60px">
             {/* Logo */}
-            <Link as={NextLink} href="/" _hover={{ textDecoration: 'none' }}>
+            <Link as={NextLink} href="/" _hover={{ textDecoration: "none" }}>
               <Flex align="center" gap={2}>
                 <Text
                   fontSize="xl"
@@ -71,7 +71,7 @@ export const Header = () => {
             <Stack
               direction="row"
               gap={4}
-              display={{ base: 'none', md: 'flex' }}
+              display={{ base: "none", md: "flex" }}
             >
               {menuItems.map((item) => (
                 <NavLink key={item.label} href={item.href}>
@@ -82,12 +82,12 @@ export const Header = () => {
 
             {/* Mobile Menu Button */}
             <IconButton
-              display={{ base: 'flex', md: 'none' }}
+              display={{ base: "flex", md: "none" }}
               onClick={() => setIsOpen(!isOpen)}
               variant="ghost"
               aria-label="Toggle navigation"
               color="gray.600"
-              _hover={{ color: '#e34b75' }}
+              _hover={{ color: "#e34b75" }}
             >
               {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
             </IconButton>
@@ -98,7 +98,7 @@ export const Header = () => {
       {/* Mobile Nav */}
       {isOpen && (
         <Box
-          display={{ base: 'block', md: 'none' }}
+          display={{ base: "block", md: "none" }}
           position="fixed"
           top="60px"
           left="0"
@@ -118,5 +118,5 @@ export const Header = () => {
         </Box>
       )}
     </Box>
-  )
-}
+  );
+};

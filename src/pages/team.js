@@ -7,11 +7,14 @@ import {
   SimpleGrid,
   Stack,
   Text,
-} from '@chakra-ui/react'
-import { Layout } from '@/components'
-import { TeamMember } from '@/components/team-member'
-import { virtualizarrMaintainers, earthaccessIntegrationTeam } from '@/data/team-members'
-import { supporters } from '@/data/supporters'
+} from "@chakra-ui/react";
+import { Layout } from "@/components";
+import { TeamMember } from "@/components/team-member";
+import {
+  virtualizarrMaintainers,
+  earthaccessIntegrationTeam,
+} from "@/data/team-members";
+import { supporters } from "@/data/supporters";
 
 export default function TeamPage() {
   return (
@@ -28,7 +31,9 @@ export default function TeamPage() {
                 Team
               </Heading>
               <Text color="gray.600" maxW="2xl" mx="auto">
-                Virtual Zarr is developed through a collaboration between individual open source developers, industry, government, academia, and non-profits.
+                Virtual Zarr is developed through a collaboration between
+                individual open source developers, industry, government,
+                academia, and non-profits.
               </Text>
             </Stack>
 
@@ -73,10 +78,10 @@ export default function TeamPage() {
                 Community Contributors
               </Heading>
               <Text color="gray.600">
-                Many more people have contributed to these projects through code,
-                documentation, and community support. Below we show all the contributors
-                through git commits. We greatly appreciate those who contribute through
-                other means as well.
+                Many more people have contributed to these projects through
+                code, documentation, and community support. Below we show all
+                the contributors through git commits. We greatly appreciate
+                those who contribute through other means as well.
               </Text>
 
               <Stack gap={8} mt={4}>
@@ -87,7 +92,7 @@ export default function TeamPage() {
                     target="_blank"
                     fontWeight="semibold"
                     color="gray.700"
-                    _hover={{ color: '#e01073' }}
+                    _hover={{ color: "#e01073" }}
                   >
                     VirtualiZarr Contributors
                   </Link>
@@ -110,7 +115,7 @@ export default function TeamPage() {
                     target="_blank"
                     fontWeight="semibold"
                     color="gray.700"
-                    _hover={{ color: '#e01073' }}
+                    _hover={{ color: "#e01073" }}
                   >
                     Icechunk Contributors
                   </Link>
@@ -133,7 +138,7 @@ export default function TeamPage() {
                     target="_blank"
                     fontWeight="semibold"
                     color="gray.700"
-                    _hover={{ color: '#e01073' }}
+                    _hover={{ color: "#e01073" }}
                   >
                     Earthaccess Contributors
                   </Link>
@@ -157,26 +162,26 @@ export default function TeamPage() {
                 Community
               </Heading>
               <Text color="gray.700">
-                Virtual Zarr is made possible by{' '}
+                Virtual Zarr is made possible by{" "}
                 {supporters.map((supporter, index) => (
                   <span key={supporter.name}>
                     <Link
                       href={supporter.url}
                       target="_blank"
                       color="#e01073"
-                      _hover={{ color: '#bb1085' }}
+                      _hover={{ color: "#bb1085" }}
                     >
                       {supporter.name}
                     </Link>
-                    {index < supporters.length - 1 ? ', ' : ', '}
+                    {index < supporters.length - 1 ? ", " : ", "}
                   </span>
                 ))}
-                and the Data Systems Evolution team at{' '}
+                and the Data Systems Evolution team at{" "}
                 <Link
                   href="https://www.nasa.gov/marshall"
                   target="_blank"
                   color="#e01073"
-                  _hover={{ color: '#bb1085' }}
+                  _hover={{ color: "#bb1085" }}
                 >
                   NASA Marshall Space Flight Center
                 </Link>
@@ -187,5 +192,5 @@ export default function TeamPage() {
         </Container>
       </Box>
     </Layout>
-  )
+  );
 }

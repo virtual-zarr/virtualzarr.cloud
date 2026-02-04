@@ -1,8 +1,8 @@
-export { Header } from './header'
-export { Footer } from './footer'
-export { Layout } from './layout'
-export { HeroBanner } from './hero-banner'
-export { EcosystemCards } from './ecosystem-cards'
-export { Benefits } from './benefits'
-export { Supporters } from './supporters'
-export { Heritage } from './heritage'
+export { Header } from "./header";
+export { Footer } from "./footer";
+export { Layout } from "./layout";
+export { HeroBanner } from "./hero-banner";
+export { EcosystemCards } from "./ecosystem-cards";
+export { Benefits } from "./benefits";
+export { Supporters } from "./supporters";
+export { Heritage } from "./heritage";

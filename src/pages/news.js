@@ -8,10 +8,10 @@ import {
   SimpleGrid,
   Stack,
   Text,
-} from '@chakra-ui/react'
-import { Layout } from '@/components'
-import { newsArticles } from '@/data/news'
-import { HiExternalLink } from 'react-icons/hi'
+} from "@chakra-ui/react";
+import { Layout } from "@/components";
+import { newsArticles } from "@/data/news";
+import { HiExternalLink } from "react-icons/hi";
 
 const NewsCard = ({ article }) => {
   return (
@@ -21,7 +21,7 @@ const NewsCard = ({ article }) => {
       target="_blank"
       borderWidth="1px"
       borderColor="gray.200"
-      _hover={{ borderColor: '#e34b75', shadow: 'md', textDecoration: 'none' }}
+      _hover={{ borderColor: "#e34b75", shadow: "md", textDecoration: "none" }}
       transition="all 0.2s"
     >
       <Card.Body>
@@ -55,8 +55,8 @@ const NewsCard = ({ article }) => {
         </Stack>
       </Card.Body>
     </Card.Root>
-  )
-}
+  );
+};
 
 export default function NewsPage() {
   return (
@@ -88,5 +88,5 @@ export default function NewsPage() {
         </Container>
       </Box>
     </Layout>
-  )
+  );
 }

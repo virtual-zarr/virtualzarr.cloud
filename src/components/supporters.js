@@ -1,12 +1,5 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Link,
-  Stack,
-  Text,
-} from '@chakra-ui/react'
-import { supporters } from '@/data/supporters'
+import { Box, Container, Heading, Link, Stack, Text } from "@chakra-ui/react";
+import { supporters } from "@/data/supporters";
 
 export const Supporters = () => {
   return (
@@ -18,26 +11,26 @@ export const Supporters = () => {
               Contributors
             </Heading>
             <Text color="gray.700">
-              Virtual Zarr is made possible by{' '}
+              Virtual Zarr is made possible by{" "}
               {supporters.map((supporter, index) => (
                 <span key={supporter.name}>
                   <Link
                     href={supporter.url}
                     target="_blank"
                     color="#e01073"
-                    _hover={{ color: '#bb1085' }}
+                    _hover={{ color: "#bb1085" }}
                   >
                     {supporter.name}
                   </Link>
-                  {index < supporters.length - 1 ? ', ' : ', '}
+                  {index < supporters.length - 1 ? ", " : ", "}
                 </span>
               ))}
-              and the Data Systems Evolution team at{' '}
+              and the Data Systems Evolution team at{" "}
               <Link
                 href="https://www.nasa.gov/marshall"
                 target="_blank"
                 color="#e01073"
-                _hover={{ color: '#bb1085' }}
+                _hover={{ color: "#bb1085" }}
               >
                 NASA Marshall Space Flight Center
               </Link>
@@ -47,5 +40,5 @@ export const Supporters = () => {
         </Stack>
       </Container>
     </Box>
-  )
-}
+  );
+};

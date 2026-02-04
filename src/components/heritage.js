@@ -7,28 +7,29 @@ import {
   SimpleGrid,
   Stack,
   Text,
-} from '@chakra-ui/react'
-import NextLink from 'next/link'
-import { HiArrowRight } from 'react-icons/hi'
+} from "@chakra-ui/react";
+import NextLink from "next/link";
+import { HiArrowRight } from "react-icons/hi";
 
 const foundationalProjects = [
   {
-    name: 'OPeNDAP',
-    description: 'Pioneered remote data access and the DMR++ metadata format',
+    name: "OPeNDAP",
+    description: "Pioneered remote data access and the DMR++ metadata format",
   },
   {
-    name: 'HDF Group',
-    description: 'Chunk-level access and the foundations of scientific data storage',
+    name: "HDF Group",
+    description:
+      "Chunk-level access and the foundations of scientific data storage",
   },
   {
-    name: 'Kerchunk',
-    description: 'Originated the concept of virtual Zarr references',
+    name: "Kerchunk",
+    description: "Originated the concept of virtual Zarr references",
   },
   {
-    name: 'fsspec',
-    description: 'Python filesystem abstraction enabling cloud-native access',
+    name: "fsspec",
+    description: "Python filesystem abstraction enabling cloud-native access",
   },
-]
+];
 
 export const Heritage = () => {
   return (
@@ -67,7 +68,7 @@ export const Heritage = () => {
               gap={1}
               color="#e01073"
               fontWeight="medium"
-              _hover={{ color: '#bb1085' }}
+              _hover={{ color: "#bb1085" }}
             >
               Full history coming March 2026 <HiArrowRight />
             </Link>
@@ -75,5 +76,5 @@ export const Heritage = () => {
         </Stack>
       </Container>
     </Box>
-  )
-}
+  );
+};

@@ -5,7 +5,7 @@ import {
   Benefits,
   Heritage,
   Supporters,
-} from '@/components'
+} from "@/components";
 
 export default function HomePage() {
   return (
@@ -19,5 +19,5 @@ export default function HomePage() {
       <Heritage />
       <Supporters />
     </Layout>
-  )
+  );
 }

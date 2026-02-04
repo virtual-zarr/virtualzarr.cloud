@@ -8,17 +8,17 @@ import {
   SimpleGrid,
   Stack,
   Text,
-} from '@chakra-ui/react'
-import { FaGithub } from 'react-icons/fa'
-import { HiExternalLink } from 'react-icons/hi'
-import { ecosystemProjects } from '@/data/ecosystem'
+} from "@chakra-ui/react";
+import { FaGithub } from "react-icons/fa";
+import { HiExternalLink } from "react-icons/hi";
+import { ecosystemProjects } from "@/data/ecosystem";
 
 const EcosystemCard = ({ project }) => {
   return (
     <Card.Root
       borderWidth="1px"
       borderColor="gray.200"
-      _hover={{ borderColor: '#e34b75', shadow: 'md' }}
+      _hover={{ borderColor: "#e34b75", shadow: "md" }}
       transition="all 0.2s"
     >
       <Card.Body>
@@ -39,7 +39,7 @@ const EcosystemCard = ({ project }) => {
               display="flex"
               alignItems="center"
               gap={1}
-              _hover={{ color: '#bb1085' }}
+              _hover={{ color: "#bb1085" }}
             >
               Documentation <HiExternalLink />
             </Link>
@@ -52,7 +52,7 @@ const EcosystemCard = ({ project }) => {
               display="flex"
               alignItems="center"
               gap={1}
-              _hover={{ color: 'gray.700' }}
+              _hover={{ color: "gray.700" }}
             >
               <FaGithub /> GitHub
             </Link>
@@ -60,8 +60,8 @@ const EcosystemCard = ({ project }) => {
         </Stack>
       </Card.Body>
     </Card.Root>
-  )
-}
+  );
+};
 
 export const EcosystemCards = () => {
   return (
@@ -94,5 +94,5 @@ export const EcosystemCards = () => {
         </Stack>
       </Container>
     </Box>
-  )
-}
+  );
+};

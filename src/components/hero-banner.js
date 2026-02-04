@@ -1,12 +1,5 @@
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  Stack,
-  Text,
-} from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 export const HeroBanner = () => {
   return (
@@ -19,7 +12,7 @@ export const HeroBanner = () => {
         <Stack gap={6} align="center" textAlign="center">
           <Heading
             as="h1"
-            fontSize={{ base: '3xl', md: '5xl' }}
+            fontSize={{ base: "3xl", md: "5xl" }}
             fontWeight="bold"
             lineHeight="1.2"
           >
@@ -30,20 +23,12 @@ export const HeroBanner = () => {
             </Text>
           </Heading>
 
-          <Text
-            fontSize={{ base: 'lg', md: 'xl' }}
-            maxW="2xl"
-            opacity={0.95}
-          >
+          <Text fontSize={{ base: "lg", md: "xl" }} maxW="2xl" opacity={0.95}>
             Virtual Zarr enables performant, cloud-optimized access to archival
             data formats like netCDF and HDF5 — without duplicating any data.
           </Text>
 
-          <Stack
-            direction={{ base: 'column', sm: 'row' }}
-            gap={4}
-            pt={4}
-          >
+          <Stack direction={{ base: "column", sm: "row" }} gap={4} pt={4}>
             <Button
               as="a"
               href="https://virtualizarr.readthedocs.io"
@@ -52,7 +37,7 @@ export const HeroBanner = () => {
               bg="white"
               color="#e34b75"
               fontWeight="600"
-              _hover={{ bg: 'gray.100', transform: 'translateY(-2px)' }}
+              _hover={{ bg: "gray.100", transform: "translateY(-2px)" }}
               transition="all 0.2s"
             >
               Get Started
@@ -66,7 +51,7 @@ export const HeroBanner = () => {
               borderWidth="2px"
               color="white"
               fontWeight="600"
-              _hover={{ bg: 'whiteAlpha.200', transform: 'translateY(-2px)' }}
+              _hover={{ bg: "whiteAlpha.200", transform: "translateY(-2px)" }}
               transition="all 0.2s"
             >
               See Use Cases
@@ -75,5 +60,5 @@ export const HeroBanner = () => {
         </Stack>
       </Container>
     </Box>
-  )
-}
+  );
+};

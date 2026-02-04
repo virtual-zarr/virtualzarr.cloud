@@ -1,13 +1,6 @@
-import {
-  Box,
-  Flex,
-  Image,
-  Link,
-  Stack,
-  Text,
-} from '@chakra-ui/react'
-import { FaGithub, FaGlobe, FaTwitter } from 'react-icons/fa'
-import { useGitHubUser } from '@/lib/github'
+import { Box, Flex, Image, Link, Stack, Text } from "@chakra-ui/react";
+import { FaGithub, FaGlobe, FaTwitter } from "react-icons/fa";
+import { useGitHubUser } from "@/lib/github";
 
 const SocialLink = ({ href, icon: Icon, label }) => (
   <Link
@@ -15,14 +8,14 @@ const SocialLink = ({ href, icon: Icon, label }) => (
     target="_blank"
     aria-label={label}
     color="gray.500"
-    _hover={{ color: '#e34b75' }}
+    _hover={{ color: "#e34b75" }}
   >
     <Icon size={18} />
   </Link>
-)
+);
 
 export const TeamMember = ({ member }) => {
-  const { data, error } = useGitHubUser(member.github)
+  const { data, error } = useGitHubUser(member.github);
 
   return (
     <Flex gap={4} align="flex-start">
@@ -68,7 +61,7 @@ export const TeamMember = ({ member }) => {
           {data?.blog && (
             <SocialLink
               href={
-                data.blog.startsWith('http')
+                data.blog.startsWith("http")
                   ? data.blog
                   : `https://${data.blog}`
               }
@@ -94,5 +87,5 @@ export const TeamMember = ({ member }) => {
         )}
       </Stack>
     </Flex>
-  )
-}
+  );
+};

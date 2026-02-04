@@ -7,9 +7,9 @@ import {
   Link,
   Stack,
   Text,
-} from '@chakra-ui/react'
-import { Layout } from '@/components'
-import { HiArrowRight, HiLightningBolt } from 'react-icons/hi'
+} from "@chakra-ui/react";
+import { Layout } from "@/components";
+import { HiArrowRight, HiLightningBolt } from "react-icons/hi";
 
 export default function UseCasesPage() {
   return (
@@ -108,7 +108,7 @@ export default function UseCasesPage() {
                     gap={1}
                     color="#e01073"
                     fontWeight="medium"
-                    _hover={{ color: '#bb1085' }}
+                    _hover={{ color: "#bb1085" }}
                   >
                     VirtualiZarr Documentation <HiArrowRight />
                   </Link>
@@ -120,7 +120,7 @@ export default function UseCasesPage() {
                     gap={1}
                     color="#e01073"
                     fontWeight="medium"
-                    _hover={{ color: '#bb1085' }}
+                    _hover={{ color: "#bb1085" }}
                   >
                     earthaccess Documentation <HiArrowRight />
                   </Link>
@@ -131,5 +131,5 @@ export default function UseCasesPage() {
         </Container>
       </Box>
     </Layout>
-  )
+  );
 }

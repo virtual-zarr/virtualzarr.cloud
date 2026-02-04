@@ -6,32 +6,32 @@ import {
   Stack,
   Text,
   IconButton,
-} from '@chakra-ui/react'
-import NextLink from 'next/link'
-import { FaGithub, FaSlack } from 'react-icons/fa'
-import { footerItems } from '@/data/footer-items'
+} from "@chakra-ui/react";
+import NextLink from "next/link";
+import { FaGithub, FaSlack } from "react-icons/fa";
+import { footerItems } from "@/data/footer-items";
 
 const ListHeader = ({ children }) => (
   <Text fontWeight="bold" mb={2} color="gray.700">
     {children}
   </Text>
-)
+);
 
 const FooterLink = ({ href, children }) => {
-  const isExternal = href.startsWith('http')
+  const isExternal = href.startsWith("http");
   return (
     <Link
-      as={isExternal ? 'a' : NextLink}
+      as={isExternal ? "a" : NextLink}
       href={href}
-      target={isExternal ? '_blank' : undefined}
+      target={isExternal ? "_blank" : undefined}
       fontSize="sm"
       color="gray.600"
-      _hover={{ color: '#e34b75' }}
+      _hover={{ color: "#e34b75" }}
     >
       {children}
     </Link>
-  )
-}
+  );
+};
 
 export const Footer = () => {
   return (
@@ -55,7 +55,7 @@ export const Footer = () => {
                 variant="ghost"
                 size="sm"
                 color="white"
-                _hover={{ bg: 'whiteAlpha.200' }}
+                _hover={{ bg: "whiteAlpha.200" }}
               >
                 <FaGithub size={20} />
               </IconButton>
@@ -67,7 +67,7 @@ export const Footer = () => {
                 variant="ghost"
                 size="sm"
                 color="white"
-                _hover={{ bg: 'whiteAlpha.200' }}
+                _hover={{ bg: "whiteAlpha.200" }}
               >
                 <FaSlack size={20} />
               </IconButton>
@@ -76,7 +76,9 @@ export const Footer = () => {
 
           {/* Ecosystem */}
           <Stack gap={2}>
-            <Text fontWeight="bold" mb={2}>Ecosystem</Text>
+            <Text fontWeight="bold" mb={2}>
+              Ecosystem
+            </Text>
             {footerItems.ecosystem.map((item) => (
               <Link
                 key={item.label}
@@ -93,7 +95,9 @@ export const Footer = () => {
 
           {/* Community */}
           <Stack gap={2}>
-            <Text fontWeight="bold" mb={2}>Community</Text>
+            <Text fontWeight="bold" mb={2}>
+              Community
+            </Text>
             {footerItems.community.map((item) => (
               <Link
                 key={item.label}
@@ -107,15 +111,15 @@ export const Footer = () => {
               </Link>
             ))}
           </Stack>
-
         </SimpleGrid>
 
         <Box borderTopWidth={1} borderColor="whiteAlpha.300" mt={8} pt={8}>
           <Text fontSize="sm" opacity={0.8} textAlign="center">
-            © {new Date().getFullYear()} Virtual Zarr Contributors. Apache 2.0 Licensed.
+            © {new Date().getFullYear()} Virtual Zarr Contributors. Apache 2.0
+            Licensed.
           </Text>
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};

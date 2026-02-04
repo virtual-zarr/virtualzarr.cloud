@@ -1,11 +1,5 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Stack,
-  Text,
-} from '@chakra-ui/react'
-import { Layout } from '@/components'
+import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Layout } from "@/components";
 
 export default function HistoryPage() {
   return (
@@ -21,9 +15,9 @@ export default function HistoryPage() {
             </Heading>
 
             <Text color="gray.600" fontSize="lg" maxW="xl" mx="auto">
-              Virtual Zarr didn&apos;t emerge from a vacuum. It builds on decades
-              of work in scientific data formats, remote data access, and
-              computer science fundamentals.
+              Virtual Zarr didn&apos;t emerge from a vacuum. It builds on
+              decades of work in scientific data formats, remote data access,
+              and computer science fundamentals.
             </Text>
 
             <Text color="gray.600" fontSize="lg" maxW="xl" mx="auto">
@@ -48,5 +42,5 @@ export default function HistoryPage() {
         </Container>
       </Box>
     </Layout>
-  )
+  );
 }

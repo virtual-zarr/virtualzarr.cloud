@@ -25,6 +25,21 @@ yarn build
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
+## Linting
+
+This project uses ESLint and Prettier for code quality and formatting.
+
+```bash
+# Run linter
+yarn lint
+
+# Fix auto-fixable issues
+yarn lint:fix
+
+# Format code with Prettier
+yarn format
+```
+
 ## Environment Variables
 
 Optional:

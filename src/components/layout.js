@@ -1,15 +1,16 @@
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
-import { Box, Flex } from '@chakra-ui/react'
-import Head from 'next/head'
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Box, Flex } from "@chakra-ui/react";
+import Head from "next/head";
 
 export const Layout = ({
-  title = 'Virtual Zarr',
-  description = 'Cloud-optimize your scientific data without copying it',
+  title = "Virtual Zarr",
+  description = "Cloud-optimize your scientific data without copying it",
   children,
 }) => {
-  const fullTitle = title === 'Virtual Zarr' ? title : `${title} | Virtual Zarr`
-  const url = 'https://virtualzarr.cloud'
+  const fullTitle =
+    title === "Virtual Zarr" ? title : `${title} | Virtual Zarr`;
+  const url = "https://virtualzarr.cloud";
 
   return (
     <>
@@ -34,7 +35,7 @@ export const Layout = ({
         <Footer />
       </Flex>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
