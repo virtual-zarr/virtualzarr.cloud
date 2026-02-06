@@ -73,7 +73,7 @@ export const EcosystemCards = () => {
               The Ecosystem
             </Heading>
             <Text color="gray.600" maxW="2xl" mx="auto">
-              Three powerful tools working together to bring cloud-native
+              Powerful tools working together to bring cloud-native
               workflows to your existing data archives.
             </Text>
           </Stack>
