@@ -5,7 +5,7 @@ export default function HistoryPage() {
   return (
     <Layout
       title="History"
-      description="The history of data virtualization in scientific computing - coming March 2026."
+      description="The history of data virtualization in scientific computing."
     >
       <Box py={{ base: 20, md: 32 }}>
         <Container maxW="container.md">
@@ -15,9 +15,8 @@ export default function HistoryPage() {
             </Heading>
 
             <Text color="gray.600" fontSize="lg" maxW="xl" mx="auto">
-              Virtual Zarr didn&apos;t emerge from a vacuum. It builds on
-              decades of work in scientific data formats, remote data access,
-              and computer science fundamentals.
+              Virtual Zarr builds on decades of work in scientific data formats,
+              remote data access, and computer science fundamentals.
             </Text>
 
             <Text color="gray.600" fontSize="lg" maxW="xl" mx="auto">
@@ -34,8 +33,8 @@ export default function HistoryPage() {
               mx="auto"
             >
               <Text color="gray.700" fontWeight="medium">
-                We&apos;re working on writing down this history and hope
-                you&apos;ll come back to read the full story in March 2026.
+                We&apos;re writing this history down properly. Reach out if you
+                were part of it.
               </Text>
             </Box>
           </Stack>

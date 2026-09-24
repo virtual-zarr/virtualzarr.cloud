@@ -24,8 +24,8 @@ export const HeroBanner = () => {
           </Heading>
 
           <Text fontSize={{ base: "lg", md: "xl" }} maxW="2xl" opacity={0.95}>
-            Virtual Zarr enables performant, cloud-optimized access to archival
-            data formats like netCDF and HDF5 — without duplicating any data.
+            Virtual Zarr gives you cloud-optimized access to archival formats
+            like netCDF and HDF5 without duplicating any data.
           </Text>
 
           <Stack direction={{ base: "column", sm: "row" }} gap={4} pt={4}>
@@ -40,7 +40,7 @@ export const HeroBanner = () => {
               _hover={{ bg: "gray.100", transform: "translateY(-2px)" }}
               transition="all 0.2s"
             >
-              Get Started
+              Get Started with VirtualiZarr
             </Button>
             <Button
               as={NextLink}

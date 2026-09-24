@@ -73,7 +73,7 @@ export default function NewsPage() {
                 News
               </Heading>
               <Text color="gray.600" maxW="2xl" mx="auto">
-                Latest articles and announcements about Virtual Zarr and the
+                Articles and announcements about Virtual Zarr and the
                 cloud-native geospatial ecosystem.
               </Text>
             </Stack>

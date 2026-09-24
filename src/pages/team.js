@@ -32,9 +32,8 @@ export default function TeamPage() {
                 Team
               </Heading>
               <Text color="gray.600" maxW="2xl" mx="auto">
-                Virtual Zarr is enabled through collaboration across industry,
-                government, academia, non-profits, and individual open source
-                developers.
+                Virtual Zarr is built by people across industry, government,
+                academia, non-profits, and independent open source developers.
               </Text>
             </Stack>
 
@@ -103,8 +102,8 @@ export default function TeamPage() {
                 Earthaccess Virtual Zarr Integration
               </Heading>
               <Text color="gray.600">
-                These individuals have contributed substantially to virtual
-                dataset integration into earthaccess.
+                These people did the work of integrating virtual datasets into
+                earthaccess.
               </Text>
 
               <SimpleGrid columns={{ base: 1, md: 2 }} gap={8} mt={4}>
@@ -120,10 +119,10 @@ export default function TeamPage() {
                 Community Contributors
               </Heading>
               <Text color="gray.600">
-                Many more people have contributed to these projects through
-                code, documentation, and community support. Below we show all
-                the contributors through git commits. We greatly appreciate
-                those who contribute through other means as well.
+                Many more people have contributed through code, documentation,
+                and community support. Listed below are the contributors
+                recorded in git commits. Thank you to everyone whose work does
+                not show up there.
               </Text>
 
               <Stack gap={8} mt={4}>
@@ -198,15 +197,14 @@ export default function TeamPage() {
               </Stack>
             </Stack>
 
-            {/* Standing on the Shoulders of Giants */}
+            {/* What Virtual Zarr builds on */}
             <Stack gap={6}>
               <Heading as="h2" size="lg" color="gray.700">
                 Standing on the Shoulders of Giants
               </Heading>
               <Text color="gray.600">
-                Virtual Zarr builds on decades of foundational work in
-                scientific data formats. We are grateful to the pioneers who
-                made this possible.
+                Virtual Zarr builds on decades of work in scientific data
+                formats. We are grateful to the people who did it.
               </Text>
 
               <Stack gap={4} mt={2}>
@@ -220,9 +218,9 @@ export default function TeamPage() {
                   >
                     HDF4 Mapping Project
                   </Link>{" "}
-                  team laid essential groundwork: Ruth Aydt (Project Manager);
-                  Mike Folk, Hyo-Kyung Lee, Binh-Minh Ribler, and MuQun Yang
-                  from The HDF Group; Christopher Lynnes from GES-DISC; and Ruth
+                  team laid the groundwork. Ruth Aydt managed the project. Mike
+                  Folk, Hyo-Kyung Lee, Binh-Minh Ribler, and MuQun Yang came
+                  from The HDF Group, Christopher Lynnes from GES-DISC, and Ruth
                   E. Duerr and Luis Lopez from NSIDC.
                 </Text>
 
@@ -230,9 +228,8 @@ export default function TeamPage() {
                   Aleksandar Jelenak wrote the first version of what would
                   become Kerchunk reference files. Rich Signell connected
                   Aleksandar with Martin Durant, who then created Kerchunk.
-                  James Gallagher created DMR++. Their collective work
-                  established the foundations that Virtual Zarr continues to
-                  build upon.
+                  James Gallagher created DMR++. Virtual Zarr builds on their
+                  work.
                 </Text>
               </Stack>
             </Stack>

@@ -14,13 +14,13 @@ const benefits = [
     icon: HiClock,
     title: "Faster Processing",
     description:
-      "Analyze a year of TEMPO data in 10 minutes instead of hours. Virtual references enable efficient parallel access.",
+      "Open a year of TEMPO data in 10 minutes instead of about a day. Virtual references allow parallel reads.",
   },
   {
     icon: HiDatabase,
     title: "No Data Duplication",
     description:
-      "Create virtual datacubes that reference existing files. No need to copy or convert terabytes of archival data.",
+      "Virtual datacubes reference the files you already have. Nothing is copied or converted.",
   },
   {
     icon: HiCloud,
@@ -32,7 +32,7 @@ const benefits = [
     icon: HiCode,
     title: "Familiar Workflow",
     description:
-      "Use the xarray and Python tools you already know. Virtual Zarr integrates seamlessly with your existing code.",
+      "Use the xarray and Python tools you already know. Your existing code does not change.",
   },
 ];
 
@@ -64,8 +64,8 @@ export const Benefits = () => {
               Why Virtual Zarr?
             </Heading>
             <Text color="gray.600" maxW="2xl" mx="auto">
-              Unlock cloud-native performance for your legacy scientific data
-              without the hassle of data migration.
+              Cloud-native access to legacy scientific data, without migrating
+              it.
             </Text>
           </Stack>
 
