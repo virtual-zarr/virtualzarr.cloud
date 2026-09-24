@@ -116,6 +116,20 @@ export default function UseCasesPage() {
                     Full-year access in ~10 minutes instead of about a day
                   </Text>
                 </Flex>
+                <Link
+                  href="https://openscapes.org/blog/2025-08-01-earthaccess-awesomeness-nasa-earthdata/"
+                  target="_blank"
+                  fontSize="sm"
+                  fontWeight="medium"
+                  color="#e01073"
+                  display="flex"
+                  alignItems="center"
+                  gap={1}
+                  w="fit-content"
+                  _hover={{ color: "#bb1085" }}
+                >
+                  Where these numbers come from <HiExternalLink />
+                </Link>
               </Stack>
             </Box>
 
