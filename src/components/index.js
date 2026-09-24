@@ -4,6 +4,5 @@ export { Layout } from "./layout";
 export { HeroBanner } from "./hero-banner";
 export { EcosystemCards } from "./ecosystem-cards";
 export { Benefits } from "./benefits";
-export { ArchiveCoverage } from "./archive-coverage";
 export { Supporters } from "./supporters";
 export { Heritage } from "./heritage";

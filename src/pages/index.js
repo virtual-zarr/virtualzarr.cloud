@@ -3,7 +3,6 @@ import {
   HeroBanner,
   EcosystemCards,
   Benefits,
-  ArchiveCoverage,
   Heritage,
   Supporters,
 } from "@/components";
@@ -17,7 +16,6 @@ export default function HomePage() {
       <HeroBanner />
       <EcosystemCards />
       <Benefits />
-      <ArchiveCoverage />
       <Heritage />
       <Supporters />
     </Layout>
