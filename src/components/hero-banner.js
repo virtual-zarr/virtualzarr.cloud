@@ -40,7 +40,7 @@ export const HeroBanner = () => {
               _hover={{ bg: "gray.100", transform: "translateY(-2px)" }}
               transition="all 0.2s"
             >
-              Get Started
+              Get Started with VirtualiZarr
             </Button>
             <Button
               as={NextLink}
