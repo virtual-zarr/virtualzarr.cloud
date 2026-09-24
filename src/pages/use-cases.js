@@ -5,11 +5,13 @@ import {
   Flex,
   Heading,
   Link,
+  SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { Layout } from "@/components";
-import { HiArrowRight, HiLightningBolt } from "react-icons/hi";
+import { HiArrowRight, HiExternalLink, HiLightningBolt } from "react-icons/hi";
+import { useCases } from "@/data/use-cases";
 
 export default function UseCasesPage() {
   return (
@@ -26,9 +28,9 @@ export default function UseCasesPage() {
                 Use Cases
               </Heading>
               <Text color="gray.600" maxW="2xl" mx="auto">
-                Virtual Zarr enables dramatically faster analysis workflows
-                across Earth science disciplines — from air quality to
-                oceanography.
+                Virtual Zarr enables dramatically faster analysis workflows —
+                from air quality to oceanography to disciplines well beyond
+                Earth science.
               </Text>
             </Stack>
 
@@ -79,6 +81,93 @@ export default function UseCasesPage() {
                     Full-year analysis in ~10 minutes vs 24+ hours traditionally
                   </Text>
                 </Flex>
+              </Stack>
+            </Box>
+
+            {/* In the wild */}
+            <Stack gap={6}>
+              <Stack gap={3} textAlign="center">
+                <Heading as="h2" size="lg" color="gray.800">
+                  In the wild
+                </Heading>
+                <Text color="gray.600" maxW="2xl" mx="auto">
+                  Production pipelines, living stores, and integrations built on
+                  virtual Zarr — from NASA DAACs to the ESGF to single-cell
+                  biology.
+                </Text>
+              </Stack>
+              <SimpleGrid columns={{ base: 1, md: 3 }} gap={6}>
+                {useCases.map((useCase) => (
+                  <Box
+                    key={useCase.name}
+                    borderWidth="1px"
+                    borderColor="gray.200"
+                    borderRadius="lg"
+                    p={5}
+                    _hover={{ borderColor: "#e34b75", shadow: "sm" }}
+                    transition="all 0.2s"
+                  >
+                    <Stack gap={3}>
+                      <Badge
+                        colorPalette="gray"
+                        w="fit-content"
+                        fontSize="xs"
+                        variant="subtle"
+                      >
+                        {useCase.tag}
+                      </Badge>
+                      <Heading as="h3" size="sm" color="gray.800">
+                        {useCase.name}
+                      </Heading>
+                      <Text color="gray.600" fontSize="sm">
+                        {useCase.description}
+                      </Text>
+                      <Link
+                        href={useCase.url}
+                        target="_blank"
+                        fontSize="sm"
+                        fontWeight="medium"
+                        color="#e01073"
+                        display="flex"
+                        alignItems="center"
+                        gap={1}
+                        _hover={{ color: "#bb1085" }}
+                      >
+                        Learn more <HiExternalLink />
+                      </Link>
+                    </Stack>
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Stack>
+
+            {/* Marketplace */}
+            <Box
+              bg="gray.50"
+              borderRadius="lg"
+              p={6}
+              borderWidth="1px"
+              borderColor="gray.200"
+            >
+              <Stack gap={2}>
+                <Heading as="h3" size="md" color="gray.800">
+                  Virtual datasets, productized
+                </Heading>
+                <Text color="gray.600">
+                  The{" "}
+                  <Link
+                    href="https://app.earthmover.io/marketplace?search=virtual"
+                    target="_blank"
+                    color="#e01073"
+                    fontWeight="medium"
+                    _hover={{ color: "#bb1085" }}
+                  >
+                    Earthmover Data Marketplace
+                  </Link>{" "}
+                  serves analysis-ready datacubes in the open Icechunk format —
+                  including virtual datasets built over existing netCDF, HDF5,
+                  GRIB, and TIFF archives.
+                </Text>
               </Stack>
             </Box>
 
