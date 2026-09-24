@@ -73,12 +73,12 @@ export const EcosystemCards = () => {
               The Ecosystem
             </Heading>
             <Text color="gray.600" maxW="2xl" mx="auto">
-              Powerful tools working together to bring cloud-native
-              workflows to your existing data archives.
+              Powerful tools working together to bring cloud-native workflows to
+              your existing data archives.
             </Text>
           </Stack>
 
-          <SimpleGrid columns={{ base: 1, md: 3 }} gap={6}>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={6}>
             {ecosystemProjects.map((project) => (
               <EcosystemCard key={project.name} project={project} />
             ))}

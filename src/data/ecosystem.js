@@ -23,4 +23,12 @@ export const ecosystemProjects = [
     github: "https://github.com/nsidc/earthaccess",
     color: "green",
   },
+  {
+    name: "Virtual TIFF",
+    description:
+      "Turn TIFF and COG archives into Zarr stores without copying any data. Publish curated, versioned datacubes over the files you already have.",
+    href: "https://github.com/virtual-zarr/virtual-tiff",
+    github: "https://github.com/virtual-zarr/virtual-tiff",
+    color: "purple",
+  },
 ];

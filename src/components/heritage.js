@@ -70,7 +70,7 @@ export const Heritage = () => {
               fontWeight="medium"
               _hover={{ color: "#bb1085" }}
             >
-              Full history coming March 2026 <HiArrowRight />
+              The story behind Virtual Zarr <HiArrowRight />
             </Link>
           </Flex>
         </Stack>
