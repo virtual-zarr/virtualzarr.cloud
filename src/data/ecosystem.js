@@ -1,11 +1,17 @@
 export const ecosystemProjects = [
   {
+    name: "Zarr",
+    description:
+      "The array format underneath all of this. Chunked, compressed, N-dimensional arrays that read directly from object storage.",
+    href: "https://zarr.dev",
+    github: "https://github.com/zarr-developers/zarr-python",
+  },
+  {
     name: "VirtualiZarr",
     description:
       "Create virtual Zarr stores from archival formats with the xarray API. Supports netCDF4, HDF5, FITS, and more.",
     href: "https://virtualizarr.readthedocs.io",
     github: "https://github.com/zarr-developers/VirtualiZarr",
-    color: "brand",
   },
   {
     name: "Icechunk",
@@ -13,15 +19,6 @@ export const ecosystemProjects = [
       "A transactional storage engine for Zarr. Commit virtual references with version control, time travel, and distributed writes.",
     href: "https://icechunk.io",
     github: "https://github.com/earth-mover/icechunk",
-    color: "teal",
-  },
-  {
-    name: "earthaccess",
-    description:
-      "Search, download, or stream NASA Earth science data in a few lines of code. Works with virtual datacube workflows.",
-    href: "https://earthaccess.readthedocs.io",
-    github: "https://github.com/nsidc/earthaccess",
-    color: "green",
   },
 ];
 

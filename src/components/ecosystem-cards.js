@@ -123,10 +123,41 @@ export const EcosystemCards = () => {
             </Flex>
           </Stack>
 
+          <Text
+            color="gray.600"
+            fontSize="sm"
+            textAlign="center"
+            maxW="2xl"
+            mx="auto"
+          >
+            Working with NASA data?{" "}
+            <Link
+              href="https://earthaccess.readthedocs.io"
+              target="_blank"
+              color="#e01073"
+              fontWeight="medium"
+              _hover={{ color: "#bb1085" }}
+            >
+              earthaccess
+            </Link>{" "}
+            covers search, Earthdata Login, and per-DAAC S3 credentials.{" "}
+            <Link
+              href="https://earthaccess-auth.readthedocs.io"
+              target="_blank"
+              color="#e01073"
+              fontWeight="medium"
+              _hover={{ color: "#bb1085" }}
+            >
+              earthaccess-auth
+            </Link>{" "}
+            packages just the login and credential half for services that need
+            nothing else.
+          </Text>
+
           <Box display="flex" justifyContent="center">
             <Image
               src="/images/VirtualZarrPathways.svg"
-              alt="How VirtualiZarr, Icechunk, and earthaccess fit together"
+              alt="Paths from netCDF, GRIB, and TIFF files through Icechunk virtual stores to Xarray, a STAC catalog, QGIS, and a map UI"
               w="80%"
             />
           </Box>
