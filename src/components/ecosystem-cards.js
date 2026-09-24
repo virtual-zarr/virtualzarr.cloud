@@ -78,8 +78,8 @@ export const EcosystemCards = () => {
               The Ecosystem
             </Heading>
             <Text color="gray.600" maxW="2xl" mx="auto">
-              Powerful tools working together to bring cloud-native workflows to
-              your existing data archives.
+              Tools that bring cloud-native workflows to the archives you
+              already have.
             </Text>
           </Stack>
 
@@ -94,8 +94,8 @@ export const EcosystemCards = () => {
               One protocol, any format
             </Heading>
             <Text color="gray.600" fontSize="sm" maxW="2xl" mx="auto">
-              VirtualiZarr parses {builtinFormats.join(", ")} out of the box —
-              and a growing set of community parsers covers the rest:
+              VirtualiZarr parses {builtinFormats.join(", ")} out of the box.
+              Community parsers cover the rest:
             </Text>
             <Flex wrap="wrap" justify="center" gap={2} pt={1}>
               {communityParsers.map((parser) => (
@@ -126,7 +126,7 @@ export const EcosystemCards = () => {
           <Box display="flex" justifyContent="center">
             <Image
               src="/images/VirtualZarrPathways.svg"
-              alt="Virtual Zarr Pathways - showing how VirtualiZarr, Icechunk, and earthaccess work together"
+              alt="How VirtualiZarr, Icechunk, and earthaccess fit together"
               w="80%"
             />
           </Box>

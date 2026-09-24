@@ -15,9 +15,8 @@ export default function HistoryPage() {
             </Heading>
 
             <Text color="gray.600" fontSize="lg" maxW="xl" mx="auto">
-              Virtual Zarr didn&apos;t emerge from a vacuum. It builds on
-              decades of work in scientific data formats, remote data access,
-              and computer science fundamentals.
+              Virtual Zarr builds on decades of work in scientific data formats,
+              remote data access, and computer science fundamentals.
             </Text>
 
             <Text color="gray.600" fontSize="lg" maxW="xl" mx="auto">
@@ -34,8 +33,8 @@ export default function HistoryPage() {
               mx="auto"
             >
               <Text color="gray.700" fontWeight="medium">
-                We&apos;re writing this history down properly. Check back soon —
-                or reach out if you were part of it.
+                We&apos;re writing this history down properly. Reach out if you
+                were part of it.
               </Text>
             </Box>
           </Stack>

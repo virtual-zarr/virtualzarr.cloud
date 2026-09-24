@@ -2,7 +2,7 @@ export const ecosystemProjects = [
   {
     name: "VirtualiZarr",
     description:
-      "Create virtual Zarr stores from archival data formats using a familiar xarray API. Supports netCDF4, HDF5, FITS, and more.",
+      "Create virtual Zarr stores from archival formats with the xarray API. Supports netCDF4, HDF5, FITS, and more.",
     href: "https://virtualizarr.readthedocs.io",
     github: "https://github.com/zarr-developers/VirtualiZarr",
     color: "brand",
@@ -18,7 +18,7 @@ export const ecosystemProjects = [
   {
     name: "earthaccess",
     description:
-      "Search, download, or stream NASA Earth science data with just a few lines of code. Seamlessly integrates with virtual datacube workflows.",
+      "Search, download, or stream NASA Earth science data in a few lines of code. Works with virtual datacube workflows.",
     href: "https://earthaccess.readthedocs.io",
     github: "https://github.com/nsidc/earthaccess",
     color: "green",

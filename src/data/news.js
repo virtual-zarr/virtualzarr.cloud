@@ -2,7 +2,7 @@ export const newsArticles = [
   {
     title: "Virtually Gribberish — Bringing Icechunk Clarity to GRIB Archives",
     description:
-      "Gribberish's VirtualiZarr-compatible parser brings zero-copy virtual references to GRIB archives, opening NOAA forecast data as cloud-optimized Icechunk stores without copying it.",
+      "Gribberish's VirtualiZarr-compatible parser opens NOAA forecast GRIB archives as cloud-optimized Icechunk stores without copying the data.",
     source: "Earthmover Blog",
     date: "July 13, 2026",
     url: "https://www.earthmover.io/blog/virtual-grib-nbm",
@@ -11,7 +11,7 @@ export const newsArticles = [
     title:
       "Old Format, No Problem: Cloud-Optimizing the GOES-16 Archive as Virtual Zarr",
     description:
-      "Seven years of GOES-16 satellite imagery — 380,000 netCDF4 files — opened as a single cloud-optimized virtual Zarr store, without copying any data.",
+      "Seven years of GOES-16 satellite imagery, 380,000 netCDF4 files, opened as one cloud-optimized virtual Zarr store without copying any data.",
     source: "Earthmover Blog",
     date: "June 2, 2026",
     url: "https://www.earthmover.io/blog/virtual-zarr",
@@ -27,7 +27,7 @@ export const newsArticles = [
   {
     title: "Icechunk 1.0: Production-Grade Cloud-Native Array Storage Is Here",
     description:
-      "Icechunk reaches 1.0 — transactional safety, efficient versioning, high-performance Rust I/O, and virtual references for HDF5 and netCDF, now production-ready.",
+      "Icechunk reaches 1.0 with transactional safety, efficient versioning, Rust I/O, and virtual references for HDF5 and netCDF.",
     source: "Earthmover Blog",
     date: "July 10, 2025",
     url: "https://www.earthmover.io/blog/icechunk-1-0-production-grade-cloud-native-array-storage-is-here",
@@ -35,7 +35,7 @@ export const newsArticles = [
   {
     title: "NASA Pilot Study on Virtual Zarr and Icechunk",
     description:
-      "Earthmover announces collaboration with NASA to bring Icechunk to Earth science workflows, enabling version-controlled, cloud-native access to massive datasets.",
+      "Earthmover's collaboration with NASA brings Icechunk to Earth science workflows, with version-controlled, cloud-native access to large datasets.",
     source: "Earthmover Blog",
     date: "March 2025",
     url: "https://earthmover.io/blog/nasa-icechunk",

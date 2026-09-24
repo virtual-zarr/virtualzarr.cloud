@@ -5,28 +5,28 @@ export const useCases = [
     name: "GOES-16 satellite imagery",
     tag: "Satellite imagery",
     description:
-      "Seven years of GOES-16 imagery — 380,000 netCDF4 files on a public bucket — opened as a single cloud-optimized virtual Zarr store.",
+      "Seven years of GOES-16 imagery, 380,000 netCDF4 files on a public bucket, opened as one cloud-optimized virtual Zarr store.",
     url: "https://www.earthmover.io/blog/virtual-zarr",
   },
   {
     name: "GPM IMERG precipitation",
     tag: "Precipitation",
     description:
-      "A pipeline building a virtual Icechunk store over the GPM IMERG half-hourly precipitation record — nearly half a million granules.",
+      "A pipeline building a virtual Icechunk store over the GPM IMERG half-hourly precipitation record, nearly half a million granules.",
     url: "https://github.com/virtual-zarr/gpmimerghh-virtualizarr-data-pipeline",
   },
   {
     name: "MUR sea surface temperature",
     tag: "Oceanography",
     description:
-      "A living virtual store: recurring updates append newly published MUR SST granules to an ongoing Icechunk repository.",
+      "Recurring updates append newly published MUR SST granules to an ongoing Icechunk repository.",
     url: "https://github.com/developmentseed/mursst-icechunk-updater",
   },
   {
     name: "GEOS-CF composition forecasts",
     tag: "Atmospheric composition",
     description:
-      "Virtual Icechunk stores for NASA's GEOS-CF dataset, with the resulting repository hosted publicly on S3.",
+      "Virtual Icechunk stores for NASA's GEOS-CF dataset, hosted publicly on S3.",
     url: "https://github.com/virtual-zarr/geos-cf-icechunk",
   },
   {
@@ -54,14 +54,14 @@ export const useCases = [
     name: "PO.DAAC operations",
     tag: "DAAC operations",
     description:
-      "PO.DAAC operationalizing its cloud-optimized format generation — virtual Zarr as DAAC infrastructure.",
+      "PO.DAAC operationalizing its cloud-optimized format generation, with virtual Zarr as DAAC infrastructure.",
     url: "https://github.com/podaac/virtualzarr-gen",
   },
   {
     name: "Single-cell biology",
     tag: "Beyond Earth science",
     description:
-      "A collection of h5ad/AnnData files referenced as one virtual sparse matrix in Icechunk — no copying.",
+      "A collection of h5ad/AnnData files referenced as one virtual sparse matrix in Icechunk, with no copying.",
     url: "https://github.com/ianhi/virtual-h5ad",
   },
 ];

@@ -38,11 +38,11 @@ export const Heritage = () => {
         <Stack gap={8}>
           <Stack gap={4} textAlign="center">
             <Heading as="h2" size="xl" color="gray.800">
-              Standing on the Shoulders of Giants
+              What Virtual Zarr builds on
             </Heading>
             <Text color="gray.600" maxW="2xl" mx="auto">
-              Virtual Zarr builds on decades of work in scientific data formats,
-              remote data access, and computer science fundamentals.
+              Decades of work in scientific data formats, remote data access,
+              and computer science fundamentals.
             </Text>
           </Stack>
 

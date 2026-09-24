@@ -53,7 +53,7 @@ export default function UseCasesPage() {
   return (
     <Layout
       title="Use Cases"
-      description="Real-world examples of Virtual Zarr accelerating scientific data analysis across Earth science disciplines."
+      description="Examples of Virtual Zarr in scientific data analysis across Earth science disciplines."
     >
       <Box py={{ base: 12, md: 20 }}>
         <Container maxW="container.lg">
@@ -64,9 +64,8 @@ export default function UseCasesPage() {
                 Use Cases
               </Heading>
               <Text color="gray.600" maxW="2xl" mx="auto">
-                Virtual Zarr enables dramatically faster analysis workflows —
-                from air quality to oceanography to disciplines well beyond
-                Earth science.
+                Faster analysis workflows, from air quality to oceanography to
+                fields well beyond Earth science.
               </Text>
             </Stack>
 
@@ -100,10 +99,10 @@ export default function UseCasesPage() {
                   Level 3 data totals ~5,000 files (~2.5 TB).
                 </Text>
                 <Text color="gray.700">
-                  Using the combination of DMR++ parsing, VirtualiZarr, and
-                  earthaccess, researchers on the Openscapes JupyterHub were
-                  able to virtually open the entire year as granule-level chunk
-                  manifests and merge them into a unified datacube.
+                  With DMR++ parsing, VirtualiZarr, and earthaccess, researchers
+                  on the Openscapes JupyterHub opened the entire year as
+                  granule-level chunk manifests and merged them into one
+                  datacube.
                 </Text>
                 <Flex
                   align="center"
@@ -114,7 +113,7 @@ export default function UseCasesPage() {
                 >
                   <HiLightningBolt size={24} />
                   <Text>
-                    Full-year analysis in ~10 minutes vs 24+ hours traditionally
+                    Full-year analysis in ~10 minutes instead of 24+ hours
                   </Text>
                 </Flex>
               </Stack>
@@ -128,7 +127,7 @@ export default function UseCasesPage() {
                 </Heading>
                 <Text color="gray.600" maxW="2xl" mx="auto">
                   Production pipelines, living stores, and integrations built on
-                  virtual Zarr — from NASA DAACs to the ESGF to single-cell
+                  virtual Zarr, from NASA DAACs to the ESGF to single-cell
                   biology.
                 </Text>
               </Stack>
@@ -181,7 +180,7 @@ export default function UseCasesPage() {
                   >
                     Earthmover Data Marketplace
                   </Link>{" "}
-                  serves analysis-ready datacubes in the open Icechunk format —
+                  serves analysis-ready datacubes in the open Icechunk format,
                   including virtual datasets built over existing netCDF, HDF5,
                   GRIB, and TIFF archives.
                 </Text>
@@ -202,8 +201,8 @@ export default function UseCasesPage() {
                   Try it yourself
                 </Heading>
                 <Text color="gray.600" maxW="xl">
-                  Get started with VirtualiZarr and earthaccess to bring
-                  cloud-native workflows to your research.
+                  Start with VirtualiZarr and earthaccess to bring cloud-native
+                  workflows to your research.
                 </Text>
                 <Flex gap={4} flexWrap="wrap" justify="center">
                   <Link
