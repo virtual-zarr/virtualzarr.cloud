@@ -65,3 +65,50 @@ export const useCases = [
     url: "https://github.com/ianhi/virtual-h5ad",
   },
 ];
+
+// The consumer side: analysis, benchmarking, serving, and cataloging tools
+// that read virtual data rather than publish it.
+export const builtOnVirtualData = [
+  {
+    name: "ExtremeWeatherBench",
+    tag: "ML benchmarking",
+    description:
+      "Brightband's benchmark of machine learning and numerical weather prediction models, focused on extreme events.",
+    url: "https://github.com/brightbandtech/ExtremeWeatherBench",
+  },
+  {
+    name: "titiler-multidim",
+    tag: "Visualization",
+    description:
+      "A TiTiler application serving map tiles directly from netCDF and Zarr datasets.",
+    url: "https://github.com/developmentseed/titiler-multidim",
+  },
+  {
+    name: "intake-virtual-icechunk",
+    tag: "Cataloging",
+    description:
+      "ACCESS-NRI's intake plugin for building and reading Icechunk stores from existing ESM datastores via VirtualiZarr.",
+    url: "https://github.com/ACCESS-NRI/intake-virtual-icechunk",
+  },
+  {
+    name: "TEEHR",
+    tag: "Hydrology",
+    description:
+      "RTI International's tools for exploratory evaluation in hydrologic research.",
+    url: "https://github.com/RTIInternational/teehr",
+  },
+  {
+    name: "pm25ml",
+    tag: "Air quality & health",
+    description:
+      "CREA's two-stage machine learning model producing daily 10 km PM2.5 estimates across India.",
+    url: "https://github.com/energyandcleanair/pm25ml",
+  },
+  {
+    name: "arco-ocean",
+    tag: "Ocean ML",
+    description:
+      "A dataset of physical ocean, wave, and sea-ice properties with hydrological and atmospheric forcing, optimized for machine learning.",
+    url: "https://github.com/inogs/arco-ocean",
+  },
+];

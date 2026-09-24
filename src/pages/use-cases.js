@@ -11,7 +11,43 @@ import {
 } from "@chakra-ui/react";
 import { Layout } from "@/components";
 import { HiArrowRight, HiExternalLink, HiLightningBolt } from "react-icons/hi";
-import { useCases } from "@/data/use-cases";
+import { useCases, builtOnVirtualData } from "@/data/use-cases";
+
+const UseCaseCard = ({ useCase }) => (
+  <Box
+    borderWidth="1px"
+    borderColor="gray.200"
+    borderRadius="lg"
+    p={5}
+    _hover={{ borderColor: "#e34b75", shadow: "sm" }}
+    transition="all 0.2s"
+  >
+    <Stack gap={3}>
+      <Badge colorPalette="gray" w="fit-content" fontSize="xs" variant="subtle">
+        {useCase.tag}
+      </Badge>
+      <Heading as="h3" size="sm" color="gray.800">
+        {useCase.name}
+      </Heading>
+      <Text color="gray.600" fontSize="sm">
+        {useCase.description}
+      </Text>
+      <Link
+        href={useCase.url}
+        target="_blank"
+        fontSize="sm"
+        fontWeight="medium"
+        color="#e01073"
+        display="flex"
+        alignItems="center"
+        gap={1}
+        _hover={{ color: "#bb1085" }}
+      >
+        Learn more <HiExternalLink />
+      </Link>
+    </Stack>
+  </Box>
+);
 
 export default function UseCasesPage() {
   return (
@@ -98,45 +134,26 @@ export default function UseCasesPage() {
               </Stack>
               <SimpleGrid columns={{ base: 1, md: 3 }} gap={6}>
                 {useCases.map((useCase) => (
-                  <Box
-                    key={useCase.name}
-                    borderWidth="1px"
-                    borderColor="gray.200"
-                    borderRadius="lg"
-                    p={5}
-                    _hover={{ borderColor: "#e34b75", shadow: "sm" }}
-                    transition="all 0.2s"
-                  >
-                    <Stack gap={3}>
-                      <Badge
-                        colorPalette="gray"
-                        w="fit-content"
-                        fontSize="xs"
-                        variant="subtle"
-                      >
-                        {useCase.tag}
-                      </Badge>
-                      <Heading as="h3" size="sm" color="gray.800">
-                        {useCase.name}
-                      </Heading>
-                      <Text color="gray.600" fontSize="sm">
-                        {useCase.description}
-                      </Text>
-                      <Link
-                        href={useCase.url}
-                        target="_blank"
-                        fontSize="sm"
-                        fontWeight="medium"
-                        color="#e01073"
-                        display="flex"
-                        alignItems="center"
-                        gap={1}
-                        _hover={{ color: "#bb1085" }}
-                      >
-                        Learn more <HiExternalLink />
-                      </Link>
-                    </Stack>
-                  </Box>
+                  <UseCaseCard key={useCase.name} useCase={useCase} />
+                ))}
+              </SimpleGrid>
+            </Stack>
+
+            {/* Built on virtual data */}
+            <Stack gap={6}>
+              <Stack gap={3} textAlign="center">
+                <Heading as="h2" size="lg" color="gray.800">
+                  Built on virtual data
+                </Heading>
+                <Text color="gray.600" maxW="2xl" mx="auto">
+                  The consumer side: analysis, benchmarking, serving, and
+                  cataloging tools that read virtual stores rather than publish
+                  them.
+                </Text>
+              </Stack>
+              <SimpleGrid columns={{ base: 1, md: 3 }} gap={6}>
+                {builtOnVirtualData.map((useCase) => (
+                  <UseCaseCard key={useCase.name} useCase={useCase} />
                 ))}
               </SimpleGrid>
             </Stack>
