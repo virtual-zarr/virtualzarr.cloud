@@ -43,9 +43,9 @@ export const newsArticles = [
   {
     title: "Zarr Everywhere",
     description:
-      "Development Seed's overview of its work on cloud-native array tooling, covering Icechunk, VirtualiZarr, and Zarr v3 adoption across the ecosystem.",
+      "A roundup of Development Seed's year with the Zarr community: the code it contributed, the tools it built, and where to connect next.",
     source: "Development Seed",
-    date: "October 13, 2025",
+    date: "October 12, 2025",
     url: "https://developmentseed.org/blog/2025-10-13-zarr/",
   },
   {
