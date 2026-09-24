@@ -1,5 +1,13 @@
 export const newsArticles = [
   {
+    title: "Hybrid Icechunk stores for serverless web mapping",
+    description:
+      "Combining virtualized netCDF with GeoZarr multiscales in one Icechunk store, so NOAA snowfall data renders in a web map with no tile server.",
+    source: "Cloud Native Geo",
+    date: "August 10, 2026",
+    url: "https://cloudnativegeo.org/blog/2026/08/virtual-icechunk-multiscale/",
+  },
+  {
     title: "Virtually Gribberish — Bringing Icechunk Clarity to GRIB Archives",
     description:
       "Gribberish's VirtualiZarr-compatible parser opens NOAA forecast GRIB archives as cloud-optimized Icechunk stores without copying the data.",
@@ -23,6 +31,39 @@ export const newsArticles = [
     source: "NASA Earthdata",
     date: "January 26, 2026",
     url: "https://www.earthdata.nasa.gov/news/feature-articles/working-non-cloud-optimized-data-just-got-easier",
+  },
+  {
+    title: "2025 Zarr Summit Recap",
+    description:
+      "The first Zarr Summit, where the community brainstormed the future of virtual Zarr and ran deep dives on Icechunk and on VirtualiZarr for archival formats.",
+    source: "Cloud Native Geo",
+    date: "November 20, 2025",
+    url: "https://cloudnativegeo.org/blog/2025/11/251118-zarr-summit/",
+  },
+  {
+    title: "Zarr Everywhere",
+    description:
+      "Development Seed's overview of its work on cloud-native array tooling, covering Icechunk, VirtualiZarr, and Zarr v3 adoption across the ecosystem.",
+    source: "Development Seed",
+    date: "October 13, 2025",
+    url: "https://developmentseed.org/blog/2025-10-13-zarr/",
+  },
+  {
+    title: "Cloud Access Mini-Workshop with TEMPO",
+    description:
+      "NASA's ASDC ran a hands-on session on opening TEMPO Level 3 data as virtual datasets from the Openscapes JupyterHub, with no bulk download.",
+    source: "Openscapes",
+    date: "September 9, 2025",
+    url: "https://openscapes.org/blog/2025-09-09-tempo-workshop/",
+  },
+  {
+    title:
+      "earthaccess — helping users leverage the awesomeness of NASA Earthdata",
+    description:
+      "The community call where the earthaccess team presented its VirtualiZarr and Icechunk integration, and where TEMPO Level 3 access dropped from about a day to ~10 minutes.",
+    source: "Openscapes",
+    date: "August 1, 2025",
+    url: "https://openscapes.org/blog/2025-08-01-earthaccess-awesomeness-nasa-earthdata/",
   },
   {
     title: "Icechunk 1.0: Production-Grade Cloud-Native Array Storage Is Here",

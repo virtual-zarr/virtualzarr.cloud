@@ -113,7 +113,7 @@ export default function UseCasesPage() {
                 >
                   <HiLightningBolt size={24} />
                   <Text>
-                    Full-year analysis in ~10 minutes instead of 24+ hours
+                    Full-year access in ~10 minutes instead of about a day
                   </Text>
                 </Flex>
               </Stack>

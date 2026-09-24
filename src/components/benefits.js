@@ -14,7 +14,7 @@ const benefits = [
     icon: HiClock,
     title: "Faster Processing",
     description:
-      "Analyze a year of TEMPO data in 10 minutes instead of hours. Virtual references allow parallel reads.",
+      "Open a year of TEMPO data in 10 minutes instead of about a day. Virtual references allow parallel reads.",
   },
   {
     icon: HiDatabase,
