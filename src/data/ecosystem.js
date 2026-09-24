@@ -23,12 +23,55 @@ export const ecosystemProjects = [
     github: "https://github.com/nsidc/earthaccess",
     color: "green",
   },
+];
+
+// Formats VirtualiZarr parses out of the box.
+export const builtinFormats = [
+  "HDF5 / netCDF4",
+  "HDF4",
+  "netCDF3",
+  "FITS",
+  "Zarr",
+  "Kerchunk",
+  "DMR++",
+  "Icechunk",
+];
+
+// Third-party parsers implementing the VirtualiZarr parser protocol.
+export const communityParsers = [
   {
-    name: "Virtual TIFF",
-    description:
-      "Turn TIFF and COG archives into Zarr stores without copying any data. Publish curated, versioned datacubes over the files you already have.",
-    href: "https://github.com/virtual-zarr/virtual-tiff",
-    github: "https://github.com/virtual-zarr/virtual-tiff",
-    color: "purple",
+    format: "TIFF / COG",
+    name: "virtual-tiff",
+    url: "https://virtual-tiff.readthedocs.io",
+  },
+  {
+    format: "GRIB1 / GRIB2",
+    name: "gribberish",
+    url: "https://github.com/mpiannucci/gribberish",
+  },
+  {
+    format: "HRRR",
+    name: "hrrr-parser",
+    url: "https://github.com/virtual-zarr/hrrr-parser",
+  },
+  {
+    format: "ICON GRIB",
+    name: "icon-ch-vzarr",
+    url: "https://github.com/MeteoSwiss/icon-ch-vzarr",
+  },
+  {
+    format: "Sentinel-2 JP2",
+    name: "sentinel-2-jp2-tlm",
+    url: "https://github.com/Kayrros/sentinel-2-jp2-tlm",
+  },
+  {
+    format: "NITF & imagery",
+    name: "osml-imagery-io",
+    url: "https://github.com/awslabs/osml-imagery-io",
+  },
+  {
+    format: "CIF",
+    name: "cifzarr",
+    url: "https://github.com/alxmrs/cifzarr",
   },
 ];

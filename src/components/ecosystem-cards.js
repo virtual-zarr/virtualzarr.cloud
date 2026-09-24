@@ -2,6 +2,7 @@ import {
   Box,
   Card,
   Container,
+  Flex,
   Heading,
   Image,
   Link,
@@ -11,7 +12,11 @@ import {
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import { HiExternalLink } from "react-icons/hi";
-import { ecosystemProjects } from "@/data/ecosystem";
+import {
+  ecosystemProjects,
+  builtinFormats,
+  communityParsers,
+} from "@/data/ecosystem";
 
 const EcosystemCard = ({ project }) => {
   return (
@@ -78,11 +83,45 @@ export const EcosystemCards = () => {
             </Text>
           </Stack>
 
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={6}>
+          <SimpleGrid columns={{ base: 1, md: 3 }} gap={6}>
             {ecosystemProjects.map((project) => (
               <EcosystemCard key={project.name} project={project} />
             ))}
           </SimpleGrid>
+
+          <Stack gap={3} textAlign="center">
+            <Heading as="h3" size="md" color="gray.800">
+              One protocol, any format
+            </Heading>
+            <Text color="gray.600" fontSize="sm" maxW="2xl" mx="auto">
+              VirtualiZarr parses {builtinFormats.join(", ")} out of the box —
+              and a growing set of community parsers covers the rest:
+            </Text>
+            <Flex wrap="wrap" justify="center" gap={2} pt={1}>
+              {communityParsers.map((parser) => (
+                <Link
+                  key={parser.name}
+                  href={parser.url}
+                  target="_blank"
+                  borderWidth="1px"
+                  borderColor="gray.200"
+                  borderRadius="full"
+                  px={3}
+                  py={1}
+                  fontSize="sm"
+                  _hover={{ borderColor: "#e34b75" }}
+                  transition="all 0.2s"
+                >
+                  <Text as="span" fontWeight="medium" color="gray.700">
+                    {parser.format}
+                  </Text>{" "}
+                  <Text as="span" color="#e01073">
+                    {parser.name}
+                  </Text>
+                </Link>
+              ))}
+            </Flex>
+          </Stack>
 
           <Box display="flex" justifyContent="center">
             <Image
