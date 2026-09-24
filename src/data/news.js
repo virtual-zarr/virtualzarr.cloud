@@ -38,7 +38,7 @@ export const newsArticles = [
       "The first Zarr Summit, where the community brainstormed the future of virtual Zarr and ran deep dives on Icechunk and on VirtualiZarr for archival formats.",
     source: "Cloud Native Geo",
     date: "November 20, 2025",
-    url: "https://cloudnativegeo.org/blog/2025/11/251118-zarr-summit/",
+    url: "https://cloudnativegeo.org/blog/2025/11/2025-zarr-summit-recap/",
   },
   {
     title: "Zarr Everywhere",
